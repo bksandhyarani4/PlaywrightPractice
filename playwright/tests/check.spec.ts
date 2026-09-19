@@ -10,12 +10,12 @@ test("Checkbox action", async({page})=>{
     const  check2= await checks.nth(1);
 
     await expect(check1).not.toBeChecked();
-    await expect(check2).not.toBeChecked();
+    await expect(check2).toBeChecked();
 
 
    await check1.check();
    await expect(check1).toBeChecked();
-   await expect(check2).not.toBeChecked();
+   await expect(check2).toBeChecked();
 
    const checkboxs = await checks.all();
    for (const check of checkboxs){

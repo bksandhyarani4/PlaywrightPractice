@@ -22,11 +22,11 @@ for (const row of rows){
     const rowdata=await row.locator("td").allInnerTexts();
     console.log(rowdata);
 
-    for (const data of rowdata){
+    //for (const data of rowdata){
     const data=await row.locator('td').nth(3).allInnerTexts();
     total+=Number(data);
     console.log("price column total", +total);
-}}
+}
 
 
 });
