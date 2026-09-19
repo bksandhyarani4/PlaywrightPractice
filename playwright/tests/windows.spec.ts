@@ -3,7 +3,7 @@ import {test, locator, expect, chromium} from '@playwright/test';
 
 test("browser context", async({})=>{
 
-    const browser = await chromium.launch({channel:'chrome', headless:false});
+    const browser = await chromium.launch({channel:'chrome', headless:true});
     const bctxt = await browser.newContext();
     const page = await bctxt.newPage();
     await page.goto("https://orangehrm.com/")
