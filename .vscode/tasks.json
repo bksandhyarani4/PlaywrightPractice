@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Toggle AutoSuggest Off",
+      "type": "shell",
+      "command": "node",
+      "args": ["${workspaceFolder}/scripts/toggle-autosuggest.js", "off"],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Toggle AutoSuggest On",
+      "type": "shell",
+      "command": "node",
+      "args": ["${workspaceFolder}/scripts/toggle-autosuggest.js", "on"],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    }
+  ]
+}
