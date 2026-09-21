@@ -29,7 +29,7 @@ for (const data of testdataarray) {
         await page.locator("#login-button").click();
 
         if(data.errormsg){
-           const errormessage = page.locator("button svg")
+           const errormessage = page.locator("h3[data-test='error']");
             await expect(errormessage).toBeVisible();
             await expect(errormessage).toHaveText(data.errormsg);
         }
