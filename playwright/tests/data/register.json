@@ -1,0 +1,26 @@
+[
+    {
+        "firstName":"san",
+        "lastName":"ran",
+        "email":"sand.ran@gmail.com",
+        "telephone":"123456789",
+        "password":"34567qwerty",
+        "subscribenewsletter":"yes"
+    },
+    {
+        "firstName":"vam",
+        "lastName":"kri",
+        "email":"vam.kri@gmail.com",
+        "telephone":"123456789",
+        "password":"6789qwerty",
+        "subscribenewsletter":"no"
+    },
+    {
+        "firstName":"Mam",
+        "lastName":"bal",
+        "email":"mam.bal@gmail.com",
+        "telephone":"123456789",
+        "password":"4567qwerty",
+        "subscribenewsletter":"yes"
+    }
+]
