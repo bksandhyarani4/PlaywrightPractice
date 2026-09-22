@@ -2,6 +2,7 @@ import {test, locator, expect, chromium} from '@playwright/test';
 
 
 test("browser context", async({})=>{
+    test.setTimeout(60_000); // launching a fresh Chrome process + visiting an external site is slower than the other tests
 
     const browser = await chromium.launch({channel:'chrome', headless:true});
     const bctxt = await browser.newContext();
@@ -28,4 +29,5 @@ test("browser context", async({})=>{
 await page.bringToFront();
 console.log(await page.title());
 
+await browser.close();
 });
