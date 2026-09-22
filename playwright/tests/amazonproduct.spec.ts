@@ -9,7 +9,7 @@ test("Product Search list", async({page})=>{
     }
 
     const searchItem = await page.getByRole('searchbox',{name:"Search Amazon.de"});
-    searchItem.waitFor({timeout:5000});
+    await searchItem.waitFor({timeout:15000});
     await searchItem.fill("Iphone 14");
     await searchItem.press("Enter");
     await page.waitForTimeout(8000);

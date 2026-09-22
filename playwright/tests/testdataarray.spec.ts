@@ -24,8 +24,8 @@ for (const data of testdataarray) {
     test(`login to sauce with ${data.username}`, async ({ page }) => {
 
         await page.goto("https://www.saucedemo.com/");
-        page.locator("#user-name").fill(data.username);
-        page.locator("#password").fill(data.password);
+        await page.locator("#user-name").fill(data.username);
+        await page.locator("#password").fill(data.password);
         await page.locator("#login-button").click();
 
         if(data.errormsg){
