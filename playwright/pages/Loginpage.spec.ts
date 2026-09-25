@@ -41,7 +41,7 @@ async enterUserName(username:string):Promise<void>{
 async Login(username:string, password:string){
     await this.enterUserName(username);
     await this.enterPassword(password);
-    //await this.clickLoginButton();
+    await this.clickLoginButton();
 
 }
 
